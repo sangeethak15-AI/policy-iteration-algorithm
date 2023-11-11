@@ -56,7 +56,6 @@ def policy_improvement(V, P, gamma=1.0):
         for prob, next_state,reward, done in P[s][a]:
           Q[s][a]+= prob*(reward+gamma*V[next_state]*(not done))
           new_pi = lambda s: {s:a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
-
     return new_pi
 ```
 
@@ -78,16 +77,12 @@ def policy_iteration(P, gamma=1.0,theta=1e-10):
 ### Optimal Policy:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/90801852-a094-4f70-8b8c-4bd1f8894f3c)
 
-
 ### Optimal Value Function:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/f5b2e50b-4f40-44bc-8c96-4380c20e6ba2)
-
 
 ### Success Rate for Optimal Policy:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/58c4d8bd-b41f-4b9a-9cad-3d9a50acbde4)
 
-
 ## RESULT:
-
 Thus, a program is developed to perform policy iteration for the given MDP.
 
