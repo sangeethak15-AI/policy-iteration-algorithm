@@ -1,4 +1,4 @@
-# POLICY ITERATION ALGORITHM
+# EXPERIMENT 3: POLICY ITERATION ALGORITHM
 
 ## AIM
 To implement a policy iteration algorithm for the given MDP.
