@@ -54,7 +54,6 @@ def policy_iteration(P, gamma=1.0, theta=1e-10):
       pi=policy_improvement(V,P,gamma)
       if old_pi=={s:pi(s) for s in range(len(P))}:
         break
-
     return V, pi
 ```
 ## OUTPUT
