@@ -16,7 +16,6 @@ It has five non terminal states includin starting state.
 
 ### Transition Probability:
 The transition probabilities for the problem statement is:
-
 * 50% - The agent moves in intended direction.
 * 33.33% - The agent stays in the same state.
 * 16.66% - The agent moves in orthogonal direction.
@@ -26,7 +25,6 @@ To reach state 7 (Goal) : +1 otherwise : 0
 
 ### Graphical Representation:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/23c50d3f-ad11-49b5-8dc1-3f3338f54ec6)
-
 
 ## POLICY ITERATION ALGORITHM:
 The algorithm implemented in the policy_iteration is a method used to find the optimal policy in a Markov decision process (MDP). Here's a step-by-step explanation of the algorithm:
@@ -58,7 +56,6 @@ def policy_improvement(V, P, gamma=1.0):
           new_pi = lambda s: {s:a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
     return new_pi
 ```
-
 ## POLICY ITERATION FUNCTION
 ```python
 def policy_iteration(P, gamma=1.0,theta=1e-10):
@@ -73,16 +70,12 @@ def policy_iteration(P, gamma=1.0,theta=1e-10):
   return V,pi
 ```
 ## OUTPUT:
-
 ### Optimal Policy:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/90801852-a094-4f70-8b8c-4bd1f8894f3c)
-
 ### Optimal Value Function:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/f5b2e50b-4f40-44bc-8c96-4380c20e6ba2)
-
 ### Success Rate for Optimal Policy:
 ![image](https://github.com/Aashima02/policy-iteration-algorithm/assets/93427086/58c4d8bd-b41f-4b9a-9cad-3d9a50acbde4)
-
 ## RESULT:
 Thus, a program is developed to perform policy iteration for the given MDP.
 
